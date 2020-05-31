@@ -26,13 +26,16 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
    Preprocessing allows you to cut your code short by assigning big blocks of data to one thing, so instead of typing out a whole bunch of stuff, you only have to type one thing and it means the same as the rest of the things.
 
 2. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
-   I enjoy
+   I enjoy using LESS to make everything neater. Nesting and Mixins make everything really convenient and clean. I don't have any issues understanding the concepts behind these preprocessors.
+
 3. How would you explain the concept of a variable to someone new to programming?
    A variable takes a bit of data and gives it a name, so it lets you define the data as a variable rather than having to type out the data every time
+
 4. What is the purpose of using functions in code?
    Functions allow you to execute a set of instructions with an assigned name. You can assign a function to do anything you want and then initialize it on its own.
+
 5. What is JSON data?
-   JSON allows a programmer to convert Javascript objeccts into code that a server can use, useful for communicating betweern front and back end.
+   JSON allows a programmer to convert Javascript objects into code that a server can use, useful for communicating between front and back end.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
