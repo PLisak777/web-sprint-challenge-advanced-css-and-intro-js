@@ -212,10 +212,8 @@ console.log(artists[2].bio);
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
-
 let remove = artists.splice(8, 1);
 let add = artists.splice(8, 0, "Vincent Van Gogh");
-// artists[8].name = "Vincent Van Gogh";
 
 console.log(artists[8]);
 
@@ -228,14 +226,21 @@ console.log(artists[8]);
  * it will return `The artist at index 0 is Amedeo Modigliani`.
  */
 
+let array = artists.id;
+let index = artists.name;
+
+function getArtistByIndex(array, index) {
+    return `The artist at index ${array} is ${index}`
+}
+
+console.log(getArtistByIndex(1, 5));
+
 /**
 
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1900-2000) */
 
 
-
-// console.log(get20s(1900)); // wut
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
