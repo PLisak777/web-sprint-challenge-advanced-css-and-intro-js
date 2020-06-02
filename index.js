@@ -282,14 +282,14 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 At the end, this function should console.log() the new array with information added"*/
 
 function addArtist(add) {
-    add = [{
-        id: 20,
+    add = {
+        id: 21,
         name: "Phil Lisak",
         years: "1981 - Present",
         genre: "Amateur Programmer",
         nationality: "Romania",
         bio: "Phil Lisak was born in a swamp and raised like a veal in a box. His earliest recollection of joy was last thursday when he found a $20 bill in a coat pocket he hadn't worn in 3 years. He enjoys all kinds of food, and will likely sit for hours and talk about the way flour used to be milled by hand and oh, have you seen this Chinese lady on Youtube who mills her own flour? She's incredible and I hate her."
-    }];
+    };
     return artists.push(add);
 }
 
@@ -303,16 +303,18 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
+const paintings = artists.paintings;
+const names = artists.name;
+
 function lotsOfArt(artists) {
-    let paintings = artists.paintings;
     for (i = 0; i < artists.length - 1; i++) {
         if (paintings >= 100) {
-
+            return proArtists[{ names }];
         }
     }
-
-    /* Code here */
 }
+
+console.log(lotsOfArt(artists));
 
 // 🎨🎨 STRETCH 🎨🎨//
 
