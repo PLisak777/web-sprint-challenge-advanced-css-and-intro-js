@@ -233,22 +233,25 @@ function getArtistByIndex(arrayArtists, index) {
     return `The artist at index ${index} is ${arrayArtists[index].name}`;
 }
 
-console.log(getArtistByIndex(artists, 5));
+console.log(getArtistByIndex(artists, 13));
 
 /**
 
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1900-2000) */
 
-function get20s() {
-    let i = artists.years;
+let active = artists.years;
+
+function get20s(active) {
     for (i = 0; i <= artists.length - 1; i++) {
-        // if statement with .slice
-        new recentArtists[{}]();
+        if (active >= '1900') { // if statement with .slice
+            let activeArtists = [active];
+            artists.slice(activeArtists);
+        }
     }
 }
 
-// console.log(get20s());
+console.log(get20s(active));
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
@@ -290,7 +293,8 @@ function addArtist(add) {
         nationality: "Romania",
         bio: "Phil Lisak was born in a swamp and raised like a veal in a box. His earliest recollection of joy was last thursday when he found a $20 bill in a coat pocket he hadn't worn in 3 years. He enjoys all kinds of food, and will likely sit for hours and talk about the way flour used to be milled by hand and oh, have you seen this Chinese lady on Youtube who mills her own flour? She's incredible and I hate her."
     };
-    return artists.push(add);
+    artists.push(add)
+    return artists;
 }
 
 console.log(addArtist(add));
@@ -304,16 +308,17 @@ and returns an array with names of artists who painted more than 100 paintings.
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
 const paintings = artists.paintings;
-const names = artists.name;
+// const names = artists.name;
 
 function lotsOfArt(artists) {
+    let proArtists = [];
     for (i = 0; i < artists.length - 1; i++) {
         if (paintings >= 100) {
-            return proArtists[{ names }];
+            proArtists.push(paintings)
         }
     }
+    return proArtists;
 }
-
 console.log(lotsOfArt(artists));
 
 // 🎨🎨 STRETCH 🎨🎨//
