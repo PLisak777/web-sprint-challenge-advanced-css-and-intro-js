@@ -222,6 +222,7 @@ vanGogh = {
     wikipedia: "http://en.wikipedia.org/wiki/Vincent_van_Gogh",
     paintings: 877,
 };
+
 let remove = artists.splice(8, 1);
 let add = artists.splice(8, 0, vanGogh);
 
@@ -250,20 +251,15 @@ console.log(getArtistByIndex(artists, 13));
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1900-2000) */
 
-function get20s() {
-    let activeArtists = [];
-    for (i = 0; i <= artists.length - 1; i++) {
-        let active = artists.slice(artists[i].years, -7); // Trying to remove the last 7 characters of string.
-
-        if (active >= 1900) {
-            artists.slice(artists[active].name);
-            activeArtists.push(active);
+function get20s(artists) {
+    return artists.filter((i => {
+        let birthYear = parseInt(i.years.slice(0, 4));
+        if (birthYear >= 1900 && birthYear <= 2000) {
+            return i;
         }
-    }
-    return activeArtists;
+    }))
 }
-
-console.log(get20s());
+console.log(get20s(artists))
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
