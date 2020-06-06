@@ -320,9 +320,9 @@ const paintings = artists.paintings;
 
 function lotsOfArt(artists) {
     let proArtists = [];
-    for (i = 0; i < artists.length - 1; i++) {
-        if (paintings >= 100) {
-            proArtists.push(paintings);
+    for (i = 0; i < artists.length; i++) {
+        if (artists[i].paintings > 100) {
+            proArtists.push(artists[i].paintings);
         }
     }
     return proArtists;
